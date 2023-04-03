@@ -1,0 +1,46 @@
+name: TohuCommand
+version: '${project.version}'
+main: com.tohu.tohucommand.TohuCommand
+commands:
+  tohu:
+    description: tohu command
+  tohu weather clear:
+    description: weather clear
+  tohu permission group:
+    description: display permission
+  tohu time day:
+    description: change time day
+  tohu time night:
+    description: change time night
+  tohu time true:
+    description: change time
+  tohu time false:
+    description: stop change time
+  tohu animals true:
+    description: appear animal
+  tohu animals false:
+    description: not appear animal
+  tohu monsters true:
+    description: appear monster
+  tohu monsters false:
+    description: not appear monster
+  tohu gamemode survival:
+    description: change gamemode survival
+  tohu gamemode creative:
+    description: change gamamode creative
+  tohu gamemode survival Player_name:
+    description: change gamemode survival
+  tohu gamemode creative Player_name:
+    description: change gamemode creative
+  tohu mob kill:
+    description: mob kill
+  tohu login pass:
+    description: login tohu
+  tohu chat msg playerName:
+    description: party chat
+  tohu set spawn:
+    description: set spawn location
+  tohu cc create judgeType:
+    description: create question
+  tohu help:
+    description: help
