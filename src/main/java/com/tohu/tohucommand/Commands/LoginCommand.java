@@ -2,9 +2,11 @@ package com.tohu.tohucommand.Commands;
 
 import com.tohu.tohucommand.Utils.PermissionUtils;
 import com.tohu.tohucommand.Utils.TohuUseUtils;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 public class LoginCommand {
+    // ログイン
     public static boolean loginCommand(String type, Player player) {
         if (type != null) {
             String url = "https://tohu-mc-backend-prod-ibldvcwaka-an.a.run.app/api/auth?auth_code="+type;
@@ -31,7 +33,7 @@ public class LoginCommand {
                 return false;
             }
         } else {
-            player.sendMessage("コマンドが間違えてるよ");
+            player.sendMessage(ChatColor.RED + "!!!" + ChatColor.WHITE + "コマンドが間違えてるよ" + ChatColor.RED + "!!!");
             return false;
         }
     }

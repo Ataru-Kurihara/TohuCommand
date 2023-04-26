@@ -1,5 +1,6 @@
 package com.tohu.tohucommand.Commands;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 public class HelpCommand {
@@ -12,7 +13,7 @@ public class HelpCommand {
             player.sendMessage("------------------------------------------");
             return true;
         } else {
-            player.sendMessage("コマンドを間違えてるよ");
+            player.sendMessage(ChatColor.RED + "!!!" + ChatColor.WHITE + "コマンドが間違えてるよ" + ChatColor.RED + "!!!");
             return false;
         }
     }

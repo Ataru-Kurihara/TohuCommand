@@ -16,8 +16,9 @@ public class CommandList {
         sender.sendMessage(ChatColor.YELLOW + "人のゲームモードの変更: " + ChatColor.WHITE + "/tohu gamemode <survival/creative/adventure/spectator> [変えたい人の名前]");
         sender.sendMessage(ChatColor.YELLOW + "Worldの情報を確認する: " + ChatColor.WHITE + "/tohu world info");
         sender.sendMessage(ChatColor.YELLOW + "特定のユーザにチャットをする: " + ChatColor.WHITE + "/tohu chat [メッセージ] [プレイヤー名]");
-        sender.sendMessage(ChatColor.YELLOW + "リスポーン地点の設定(その場所がリスポーン地点になる): " + ChatColor.WHITE + "/tohu set spawn");
+        sender.sendMessage(ChatColor.YELLOW + "現在地をリスポーン地点に設定: " + ChatColor.WHITE + "/tohu set spawn");
         sender.sendMessage(ChatColor.YELLOW + "特定のプレイヤーにテレポートします: " + ChatColor.WHITE + "/tohu tp [プレイヤー名]");
+        sender.sendMessage(ChatColor.YELLOW + "ワールド一覧を表示: " + ChatColor.WHITE + "/tohu world list");
         sender.sendMessage("--------------------------------");
     }
 }

@@ -17,7 +17,12 @@ public class TohuUseUtils {
     }
 
     public static String getUserName(String url) {
+        if (getUser(url) == null) return "null";
         return getUser(url).userName;
     }
+//    public static void main(String[] args) {
+//        String url = "https://tohu-mc-backend-prod-ibldvcwaka-an.a.run.app/api/auth?auth_code=0410";
+//        System.out.println(getAuthenticated(url));
+//    }
 
 }

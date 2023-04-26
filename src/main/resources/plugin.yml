@@ -6,6 +6,8 @@ commands:
     description: tohu command
   tohu weather clear:
     description: weather clear
+  tohu weather rain:
+    description: weather rain
   tohu permission group:
     description: display permission
   tohu time day:
@@ -44,3 +46,9 @@ commands:
     description: create question
   tohu help:
     description: help
+  tohu set name:
+    description: set name
+  tohu tp playerName:
+    description: teleport to player
+  tohu world list:
+    description: world list

@@ -1,5 +1,6 @@
 package com.tohu.tohucommand.Commands;
 
+import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.entity.*;
 
@@ -30,7 +31,7 @@ public class MobCommand {
             }
             return true;
         }else {
-            player.sendMessage("コマンドを間違えてるよ");
+            player.sendMessage(ChatColor.RED + "!!!" + ChatColor.WHITE + "コマンドが間違えてるよ" + ChatColor.RED + "!!!");
             return false;
         }
     }

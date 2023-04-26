@@ -14,7 +14,7 @@ public class ChatCommand {
         if (!playerName.equals(Bukkit.getPlayer(playerName).getName())) {
             player.sendMessage("プレイヤー名を間違えてるよ");
         }else {
-            player.sendMessage("コマンドが間違えてるよ");
+            player.sendMessage(ChatColor.RED + "!!!" + ChatColor.WHITE + "コマンドが間違えてるよ" + ChatColor.RED + "!!!");
         }
         return false;
     }

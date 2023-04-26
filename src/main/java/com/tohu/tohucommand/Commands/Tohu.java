@@ -31,22 +31,25 @@ public class Tohu implements CommandExecutor {
                     if (args.length == 3) {
                         if (args[0].equals("gamemode")) return GameModeCommand.gameModeToPlayerCommand(args[1], args[2], player);
                     }
-                    if (args[0].equals("world")) return WorldCommand.worldInfoCommand(args[1], player);
+                    if (args[0].equals("world")) {
+                        if (args[1].equals("info")) return WorldCommand.worldInfoCommand(args[1], player);
+                        if (args[1].equals("list")) return WorldCommand.getWorldsName(args[1], player);
+                    }
                     if (args[0].equals("login")) return LoginCommand.loginCommand(args[1], player);
                     if (args[0].equals("chat")) return ChatCommand.chatCommand(args[1], args[2], player);
                     if (args[0].equals("set")) return WorldCommand.setSpawnLocationCommand(args[1], player);
-                    if (args[0].equals("tp")) return TeleportCommand.teleportCommand(args[0], player, args[2]);
-                    else player.sendMessage("コマンドを間違えてるよ");
+                    if (args[0].equals("tp")) return TeleportCommand.teleportCommand(args[0], player, args[1]);
+                    else player.sendMessage(ChatColor.RED + "!!!" + ChatColor.WHITE + "コマンドが間違えてるよ" + ChatColor.RED + "!!!");
                 }else if (PermissionUtils.getPermissionGroup(player).equals("moderator") || PermissionUtils.getPermissionGroup(player).equals("user")) {
                     if (args[0].equals("login")) return LoginCommand.loginCommand(args[1], player);
                     if (args[0].equals("chat")) return ChatCommand.chatCommand(args[1], args[2], player);
-                    if (args[0].equals("tp")) return TeleportCommand.teleportCommand(args[0], player, args[2]);
+                    if (args[0].equals("tp")) return TeleportCommand.teleportCommand(args[0], player, args[1]);
                 } else {
                     player.sendMessage(ChatColor.RED + "権限がないよ");
                 }
             }
         } else {
-            player.sendMessage("コマンドを間違えてるよ");
+            player.sendMessage(ChatColor.RED + "!!!" + ChatColor.WHITE + "コマンドが間違えてるよ" + ChatColor.RED + "!!!");
         }
         return false;
     }

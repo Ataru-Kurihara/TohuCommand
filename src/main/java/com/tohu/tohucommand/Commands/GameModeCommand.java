@@ -3,6 +3,7 @@ package com.tohu.tohucommand.Commands;
 import com.tohu.tohucommand.TohuCommand;
 import com.tohu.tohucommand.Utils.PlayerUtils;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 
@@ -18,7 +19,7 @@ public class GameModeCommand {
             if (type.equals("spectator")) player.sendMessage("ゲームモードをスペクテイターに変更しました");
             return true;
         }else {
-            player.sendMessage("コマンドが間違えてるよ");
+            player.sendMessage(ChatColor.RED + "!!!" + ChatColor.WHITE + "コマンドが間違えてるよ" + ChatColor.RED + "!!!");
             return false;
         }
     }
@@ -37,7 +38,7 @@ public class GameModeCommand {
             }
             return true;
         } else {
-            player.sendMessage("コマンドを間違えてるよ");
+            player.sendMessage(ChatColor.RED + "!!!" + ChatColor.WHITE + "コマンドが間違えてるよ" + ChatColor.RED + "!!!");
             return false;
         }
     }
