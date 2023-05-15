@@ -52,3 +52,5 @@ commands:
     description: teleport to player
   tohu world list:
     description: world list
+  tohu give item:
+    description: give item

@@ -19,6 +19,7 @@ public class CommandList {
         sender.sendMessage(ChatColor.YELLOW + "現在地をリスポーン地点に設定: " + ChatColor.WHITE + "/tohu set spawn");
         sender.sendMessage(ChatColor.YELLOW + "特定のプレイヤーにテレポートします: " + ChatColor.WHITE + "/tohu tp [プレイヤー名]");
         sender.sendMessage(ChatColor.YELLOW + "ワールド一覧を表示: " + ChatColor.WHITE + "/tohu world list");
+        sender.sendMessage(ChatColor.YELLOW + "アイテム付与: " + ChatColor.WHITE + "/tohu give [アイテム名]");
         sender.sendMessage("--------------------------------");
     }
 }
